@@ -1,0 +1,57 @@
+{
+  "name": "barebone-electron-sveltekit-typescript",
+  "version": "1.0.0",
+  "description": "A minimal Electron application powered by SvelteKit written with Typescript",
+  "main": "dist/main.js",
+  "scripts": {
+    "setup": "yarn && yarn --cwd src/renderer",
+    "dev": "concurrently -k \"yarn --cwd src/renderer dev\"  \"tsc -w\" \"nodemon\"",
+    "build": "tsc && yarn --cwd src/renderer build && electron-builder",
+    "lint": "eslint -c .eslintrc --ext .ts ./src"
+  },
+  "repository": "https://github.com/sheeyang/barebone-electron-sveltekit-typescript",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo",
+    "typescript",
+    "Svelte",
+    "SvelteKit"
+  ],
+  "author": "Chew Shee Yang",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "concurrently": "^7.1.0",
+    "electron": "^17.1.2",
+    "electron-builder": "^23.0.3",
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "electron-serve": "^1.1.0"
+  },
+  "nodemonConfig": {
+    "watch": "./src/main/*",
+    "exec": "yarn electron .",
+    "ext": "*"
+  },
+  "build": {
+    "appId": "barebone-electron-sveltekit-typescript",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false
+    }
+  }
+}
