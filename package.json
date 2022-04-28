@@ -5,7 +5,7 @@
   "main": "dist/main.js",
   "scripts": {
     "setup": "yarn && yarn --cwd src/renderer",
-    "dev": "concurrently -k \"yarn --cwd src/renderer dev\"  \"tsc -w\" \"nodemon\"",
+    "dev": "concurrently -k --raw \"yarn --cwd src/renderer dev\"  \"tsc -w\" \"nodemon\"",
     "build": "tsc && yarn --cwd src/renderer build && electron-builder",
     "lint": "eslint -c .eslintrc --ext .ts ./src"
   },
