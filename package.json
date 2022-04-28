@@ -1,5 +1,5 @@
 {
-  "name": "electron-sveltekit-typescript",
+  "name": "barebone-electron-sveltekit-typescript",
   "version": "1.0.0",
   "description": "A minimal Electron application powered by SvelteKit written with Typescript",
   "main": "dist/main.js",
@@ -9,7 +9,7 @@
     "build": "tsc && yarn --cwd src/renderer build && electron-builder",
     "lint": "eslint -c .eslintrc --ext .ts ./src"
   },
-  "repository": "https://github.com/sheeyang/electron-sveltekit-typescript",
+  "repository": "https://github.com/sheeyang/barebone-electron-sveltekit-typescript",
   "keywords": [
     "Electron",
     "quick",
@@ -41,7 +41,7 @@
     "ext": "*"
   },
   "build": {
-    "appId": "electron-sveltekit-typescript",
+    "appId": "barebone-electron-sveltekit-typescript",
     "directories": {
       "output": "build"
     },

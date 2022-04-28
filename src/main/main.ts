@@ -14,7 +14,7 @@ function createWindow() {
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
     },
-    title: "electron-sveltekit-typescript",
+    title: "barebone-electron-sveltekit-typescript",
     height: 600,
     width: 800,
   });

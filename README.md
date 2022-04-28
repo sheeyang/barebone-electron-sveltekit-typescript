@@ -1,10 +1,10 @@
-# electron-sveltekit-typescript
+# barebone-electron-sveltekit-typescript
 
 A barebone and minimal project template for Electron and SvelteKit with complete TypeScript support and no extra features added.
 
 ## Screenshot
 
-![Screenshot](https://github.com/sheeyang/electron-sveltekit-typescript/blob/master/screenshot.png)
+![Screenshot](https://github.com/sheeyang/barebone-electron-sveltekit-typescript/blob/master/screenshot.png)
 
 ## Why did I create this?
 
@@ -22,9 +22,9 @@ This template is just a combination of [electron-quick-start-typescript](https:/
 
 ```bash
 # Clone this repository
-git clone https://github.com/sheeyang/electron-sveltekit-typescript project
+git clone https://github.com/sheeyang/barebone-electron-sveltekit-typescript project
 # OR
-npx degit sheeyang/electron-sveltekit-typescript project
+npx degit sheeyang/barebone-electron-sveltekit-typescript project
 # Go into the repository
 cd project
 # Install dependencies
