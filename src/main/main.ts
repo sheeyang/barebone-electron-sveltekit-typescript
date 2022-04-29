@@ -1,5 +1,5 @@
 import electron, { app, BrowserWindow } from "electron";
-import * as path from "path";
+import path from "path";
 import serve from "electron-serve";
 
 const isDev = !electron.app.isPackaged;
@@ -31,7 +31,9 @@ function createWindow() {
   if (isDev) {
     loadDev();
     mainWindow.webContents.openDevTools();
-  } else loadURL(mainWindow);
+  } else {
+    loadURL(mainWindow);
+  }
 }
 
 // This method will be called when Electron has finished
