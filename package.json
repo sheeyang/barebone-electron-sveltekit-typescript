@@ -5,7 +5,7 @@
   "main": "dist/main.js",
   "scripts": {
     "setup": "yarn && yarn --cwd src/renderer",
-    "dev": "concurrently -k --raw \"yarn --cwd src/renderer dev\"  \"tsc -w\" \"nodemon\"",
+    "dev": "concurrently -k --raw \"yarn --cwd src/renderer dev\"  \"tsc -w --inlineSourceMap --inlineSources\" \"nodemon\"",
     "build": "tsc && yarn --cwd src/renderer build && electron-builder",
     "lint": "eslint -c .eslintrc --ext .ts ./src"
   },
@@ -29,7 +29,7 @@
     "electron": "^18.1.0",
     "electron-builder": "^23.0.3",
     "eslint": "^7.32.0",
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.16",
     "typescript": "^4.6.4"
   },
   "dependencies": {
