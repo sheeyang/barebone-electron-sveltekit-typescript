@@ -4,7 +4,7 @@ A barebone and minimal project template for Electron and SvelteKit with complete
 
 ## Screenshot
 
-![Screenshot](https://github.com/sheeyang/barebone-electron-sveltekit-typescript/blob/master/screenshot.png)
+![Screenshot](https://github.com/sheeyang/barebone-electron-sveltekit-typescript/blob/main/screenshot.png)
 
 ## Why did I create this?
 
