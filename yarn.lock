@@ -124,10 +124,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@sveltejs/adapter-static@^1.0.0-next.29":
-  version "1.0.0-next.30"
-  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-static/-/adapter-static-1.0.0-next.30.tgz#3c47b535efa171e6052f19846b20af6899872176"
-  integrity sha512-xJPOXuj4T/lw9pZpMQAoN68TgrOPp/zOldvSFA+A5CIhb8yLXkgxOWh6UDUrbVxM1NjOdt8lwPdZfdkh5FL2Fg==
+"@sveltejs/adapter-static@^1.0.0-next.38":
+  version "1.0.0-next.38"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-static/-/adapter-static-1.0.0-next.38.tgz#3c1638c062f7e205cdea99d1fa5534551ef20cb9"
+  integrity sha512-O1b264K62E3OrUnsFxMjKn3CUJF50fxGcW0rWk8fa5kjzskPsSyTxS3jnWNryFaVJ3oSUtx57m4qFW43S1910Q==
   dependencies:
     tiny-glob "^0.2.9"
 
